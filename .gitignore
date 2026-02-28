@@ -1,0 +1,21 @@
+# Environment variables
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environments (if any)
+venv/
+.venv/
+
+# Syncthing conflicts
+*.sync-conflict-*
+
