@@ -20,7 +20,7 @@
 set -euo pipefail
 
 # --- Config ---
-CLAUDE_BIN="${CLAUDE_BIN:-$(which claude 2>/dev/null || echo /home/rrobinson/.nvm/versions/node/v23.11.1/bin/claude)}"
+CLAUDE_BIN="${CLAUDE_BIN:-$(which claude 2>/dev/null || echo /usr/bin/claude)}"
 OUTPUT_BASE="${OUTPUT_BASE:-/mnt/d/obs/life-var/exchange}"
 WORK_DIR="/tmp/native-research-$$"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
