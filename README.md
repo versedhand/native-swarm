@@ -18,16 +18,16 @@ Already in `~/.bashrc`. New sessions get team tools automatically.
 
 ```bash
 # Quick research (3 teammates)
-/life-code/native-swarm/native-research.sh quick "topic" "question 1" "question 2"
+/projects/native-swarm/native-research.sh quick "topic" "question 1" "question 2"
 
 # Standard research (5 teammates)
-/life-code/native-swarm/native-research.sh standard "topic" "question"
+/projects/native-swarm/native-research.sh standard "topic" "question"
 
 # Thorough research (8 teammates)
-/life-code/native-swarm/native-research.sh thorough "topic" "question"
+/projects/native-swarm/native-research.sh thorough "topic" "question"
 ```
 
-Output goes to `/life-var/exchange/{slug}-{timestamp}/`.
+Output goes to `/isaac-workspace-corpus/var/exchange/{slug}-{timestamp}/`.
 
 ## Tool API (from official system prompts)
 
@@ -115,7 +115,7 @@ All teammates run **in-process** (`backendType: "in-process"`) — they share th
 ## Output Structure
 
 ```
-/life-var/exchange/{slug}-{timestamp}/
+/isaac-workspace-corpus/var/exchange/{slug}-{timestamp}/
 ├── findings-web-broad.md    # 10-15KB, 10+ findings with URLs
 ├── findings-web-deep.md     # 10-15KB, focused on forums/Reddit
 ├── findings-data.md         # 10-15KB, .gov/.edu/official sources
@@ -155,8 +155,8 @@ All teammates run **in-process** (`backendType: "in-process"`) — they share th
 
 1. **Now**: Use `native-research.sh` for headless batch research
 2. **In-session**: When agent has Teammate tool, use it directly (no shell script needed)
-3. **Deprecate**: research-swarm MCP (`/life-code/research-swarm/`)
-4. **Keep**: Subprocess swarm (`/life-code/swarm/`) for non-research parallel work
+3. **Deprecate**: research-swarm MCP (`/projects/research-swarm/`)
+4. **Keep**: Subprocess swarm (`/projects/swarm/`) for non-research parallel work
 
 ## In-Session Protocol
 
@@ -189,7 +189,7 @@ Official system prompts (from `Piebald-AI/claude-code-system-prompts` repo):
 - `system-prompt-teammate-communication.md` — Communication rules
 - `agent-prompt-exit-plan-mode-with-swarm.md` — Plan → swarm workflow
 
-Cloned to: `/life-var/tmp/claude-code-system-prompts/`
+Cloned to: `/isaac-workspace-corpus/var/tmp/claude-code-system-prompts/`
 
 ## File Layout
 

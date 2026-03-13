@@ -21,7 +21,7 @@ set -euo pipefail
 
 # --- Config ---
 CLAUDE_BIN="${CLAUDE_BIN:-$(which claude 2>/dev/null || echo /usr/bin/claude)}"
-OUTPUT_BASE="${OUTPUT_BASE:-/mnt/d/obs/life-var/exchange}"
+OUTPUT_BASE="${OUTPUT_BASE:-/home/rrobinson/corpus/isaac-workspace-corpus/var/exchange}"
 WORK_DIR="/tmp/native-research-$$"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
